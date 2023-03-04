@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quran</title>
+
+  <!-- BOXICONS {https://boxicons.com/} -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Libre+Franklin&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <nav class="main_nav">
+      <div class="brand_info nav_child">
+        <h1>Ali Ibn Talib</h1>
+      </div>
+      <div class="main_menu_cover nav_child">
+        <ul class="main_menu">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Courses</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <li class="nav_child menu-button">
+        <a href="">Register</a>
+      </li>
+      <!-- <button class="nav_child nav-button"><i class='bx bx-menu-alt-left'></i></button> -->
+    </nav>
+
+    <div class="slider_wrapper">
+      <div class="slider_cover">
+        <div class="slide">
+          <img src="img/Slide_1.jpg" alt="" srcset="">
+          <div class="slide_text">
+            <h1>"Ali Ibn Abi Talib" Online Quran Learning</h1>
+            <p>The Quran gives an insight into how to live with a purpose to serve Almighty Allah and many verses of the Noble Quran speak about the origins of the existence of human beings and this Universe.</p>
+            <a href="http://" class="register_button">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer_contact">
+        <form action="">
+          <h1>Contact</h1>
+          <div class="row">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <input type="text" placeholder="Subject">
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <button class="form-button">Send</button>
+        </form>
+      </div>
+      <div class="footer_sec">
+        <section>
+          <h1>About US</h1>
+          <div class="footer_nav_sec">
+            <p>Quran Academy is the leading Online Quran teaching service which is committed to exclusive courses of Holy Quran. We offer the best Quranic teaching service to the worldwide Muslim community since 2013 through qualified and experienced male/female teachers.</p>
+          </div>
+        </section>
+
+        <section>
+          <h1>Address & Offices</h1>
+          <div class="footer_nav_sec">
+            <address>
+              <h3>Head Office</h3>
+              <b><i class='bx bxs-phone-call' ></i> <span>+61422129903</span>
+              <br><b><i class='bx bx-home'></i></b> <span>42 Norfolk Road, Greenacres, NSW, 2190</span>
+            </address>
+
+            <address>
+              <h3>Pakistan Office</h3>
+              <b><i class='bx bxs-phone-call' ></i> <span>+923006963438</span>
+              <br><b><i class='bx bx-home'></i></b> <span>House No 13A, SM Garden, Madhali road, Sahiwal, 57000 
+              </span>
+            </address>
+          </div>
+        </section>
+
+        <section>
+          <h1>Important Links</h1>
+          <div class="footer_nav_sec">
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Career</a></li>
+          </div>
+        </section>
+      </div>
+      <div class="foot-copy">
+        <p>&copy;&nbsp;2023&nbsp;Quranacademy&nbsp;</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    var slide = document.querySelector(".slide img");
+    function changeSrc(imgsrc,y){
+      imgsrc.setAttribute("src","img/Slide_" + y + ".jpg");
+    }
+    
+    let intrvl = 1;
+  // slideBox
+    setInterval(()=>{
+
+      if(intrvl<=5){   
+        changeSrc(slide,intrvl);intrvl += 1;
+       
+      }else {
+        intrvl = 1;
+      }
+      
+    },2000);
+  </script>
+</body>
+</html>
